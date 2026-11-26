@@ -52,8 +52,20 @@ To set up the necessary environment for running this project, follow the steps b
    pip install torch==2.7.1+cu128 torchvision==0.22.1+cu128 torchaudio==2.7.1+cu128 \
        --index-url https://download.pytorch.org/whl/cu128
    ```
+   or on macOS:
+
+   ```
+   pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1
    
-3. **Install remaining dependencies**
+   ```
+   Verify if Apple GPU can be called:
+
+   ```
+   python -c "import torch; print('torch:', torch.__version__, 'mps:', torch.backends.mps.is_available())"
+   ```
+  It should return `torch: 2.7.1 mps: True`.
+   
+4. **Install remaining dependencies**
 
    ```bash
    pip install -r requirements.txt
