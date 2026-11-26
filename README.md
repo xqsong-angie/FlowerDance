@@ -165,6 +165,32 @@ Available genres:
 15  DunHuang
 ```
 
+## Render
+
+With music (get mp4 file):
+
+```
+brew install ffmpeg
+
+python -c "
+import pickle, vis
+m = pickle.load(open('inference_outputs/0/063_Hiphop.pkl', 'rb'))
+vis.skeleton_render(m['full_pose'], out='renders', name='inference_outputs/063_Hiphop.wav')
+"
+
+```
+
+Without Music (get .gif):
+
+```
+python -c "
+import pickle, vis
+m = pickle.load(open('inference_outputs/0/063_Hiphop.pkl', 'rb'))
+vis.skeleton_render(m['full_pose'], out='renders', name='063_Hiphop.wav', sound=False)
+"
+```
+
+
 The checkpoint is downloaded automatically from [Hugging Face](https://huggingface.co/xlt99/FlowerDance) when `--checkpoint` is omitted. Generated motions are saved to `inference_outputs/`.
 
 ---
