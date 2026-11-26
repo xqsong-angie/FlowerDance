@@ -165,7 +165,7 @@ Available genres:
 15  DunHuang
 ```
 
-## Rendering
+## 🎨 Rendering
 
 With music (get mp4 file):
 
