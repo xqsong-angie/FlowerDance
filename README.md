@@ -170,7 +170,7 @@ Available genres:
 With music (get mp4 file):
 
 ```
-brew install ffmpeg
+conda install -c conda-forge ffmpeg
 
 python render.py inference_outputs/0/063_Hiphop.pkl --audio inference_outputs/063_Hiphop.wav
 
