@@ -139,6 +139,26 @@ List all supported dance genres:
 ```bash
 python inference.py --list-genres
 ```
+Available genres:
+
+```
+ 0  Dai
+ 1  ShenYun
+ 2  Wei
+ 3  Korean
+ 4  Urban
+ 5  Hiphop
+ 6  Popping
+ 7  Miao
+ 8  HanTang
+ 9  Breaking
+10  Kun
+11  Locking
+12  Jazz
+13  Choreography
+14  Chinese
+15  DunHuang
+```
 
 The checkpoint is downloaded automatically from [Hugging Face](https://huggingface.co/xlt99/FlowerDance) when `--checkpoint` is omitted. Generated motions are saved to `inference_outputs/`.
 
