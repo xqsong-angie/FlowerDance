@@ -133,6 +133,11 @@ python inference.py path/to/music.wav \
     --genre Hiphop \
     --duration 32
 ```
+On Mac:
+
+```
+WANDB_MODE=offline python inference.py music.wav --genre Hiphop --duration 32
+```
 
 List all supported dance genres:
 
