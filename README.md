@@ -65,7 +65,7 @@ To set up the necessary environment for running this project, follow the steps b
    ```
   It should return `torch: 2.7.1 mps: True`.
    
-4. **Install remaining dependencies**
+3. **Install remaining dependencies**
 
    ```bash
    pip install -r requirements.txt
