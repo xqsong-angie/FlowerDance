@@ -172,22 +172,14 @@ With music (get mp4 file):
 ```
 brew install ffmpeg
 
-python -c "
-import pickle, vis
-m = pickle.load(open('inference_outputs/0/063_Hiphop.pkl', 'rb'))
-vis.skeleton_render(m['full_pose'], out='renders', name='inference_outputs/063_Hiphop.wav')
-"
+python render.py inference_outputs/0/063_Hiphop.pkl --audio inference_outputs/063_Hiphop.wav
 
 ```
 
 Without Music (get .gif):
 
 ```
-python -c "
-import pickle, vis
-m = pickle.load(open('inference_outputs/0/063_Hiphop.pkl', 'rb'))
-vis.skeleton_render(m['full_pose'], out='renders', name='063_Hiphop.wav', sound=False)
-"
+python render.py inference_outputs/0/063_Hiphop.pkl
 ```
 
 
