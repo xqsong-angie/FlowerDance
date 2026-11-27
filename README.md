@@ -190,6 +190,11 @@ The checkpoint is downloaded automatically from [Hugging Face](https://huggingfa
 ### 3D Model Rendering
 Sign up at [SMPL Official website](https://smpl.is.tue.mpg.de/), go to `Download` and [Download version 1.1.0 for Python 2.7 (female/male/neutral, 300 shape PCs)](https://download.is.tue.mpg.de/download.php?domain=smpl&sfile=SMPL_python_v.1.1.0.zip). 
 
+Then 
+
+```
+python render.py xxx.pkl --audio path/to/your/music.wav --mesh
+```
 ---
 
 ## 🙏 Acknowledgements
