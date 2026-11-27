@@ -167,6 +167,8 @@ Available genres:
 
 ## 🎨 Rendering
 
+### Stick Figure Rendering
+
 With music (get mp4 file):
 
 ```
@@ -181,9 +183,12 @@ Without Music (get .gif):
 ```
 python render.py inference_outputs/0/063_Hiphop.pkl
 ```
-
+Here you can see a stick figure dancing.
 
 The checkpoint is downloaded automatically from [Hugging Face](https://huggingface.co/xlt99/FlowerDance) when `--checkpoint` is omitted. Generated motions are saved to `inference_outputs/`.
+
+### 3D Model Rendering
+Sign up at [SMPL Official website](https://smpl.is.tue.mpg.de/), go to `Download` and [Download version 1.1.0 for Python 2.7 (female/male/neutral, 300 shape PCs)](https://download.is.tue.mpg.de/download.php?domain=smpl&sfile=SMPL_python_v.1.1.0.zip). 
 
 ---
 
